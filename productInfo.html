@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-*" />
+        
+        <link rel="stylesheet" href="{{ url_for('static', filename='front_end.css') }}"><title>Individual Front-End Deliverable</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js">  
+        </script>  
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js">  
+        </script>  
+        
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/ui-lightness/jquery-ui.css"
+            rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="productName">
+                    <h1>{{product}}</h1>
+                </div>
+            </div>
+        </header>
+        <header class="header2">
+            <div class="container">
+                <h2>{{brand}}</h2>
+            </div>
+        </header>
+        <div class="box">
+            <div class="list">
+                {% for row in ingredients: %}
+                <div class="text">{{row}}</div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <p>&copy Morgan Graves, 2022</p>
+            </footer>
+        </div>
+    </body>

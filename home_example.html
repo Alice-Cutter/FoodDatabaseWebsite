@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <h1>Welcome to the {{title}}!</h1>
+        <ul>
+            {% for heading in headings: %}
+            <li>{{ heading }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

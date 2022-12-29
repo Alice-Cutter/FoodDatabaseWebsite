@@ -1,0 +1,61 @@
+Command line usage:
+    feature b: brand
+    >>> python3 what2Eat.py getAllProducts -b 'FRESH & EASY' 
+        #returns all products (as a list) carried by FRESH & EASY 
+    >>> ['CHIPOTLE BARBECUE SAUCE', 'HOT & SPICY BARBECUE SAUCE', ...... 'PASTA SAUCE WITH IMPORTED ITALIAN TOMATOES & OLIVE OIL']
+
+    feature p: product
+    >>> python3 what2Eat.py getProductIngredients -b 'FRESH & EASY' -p 'BARBECUE SAUCE'
+        #returns ingredients (as a single string) of BARBECUE SAUCE carried by FRESH & EASY 
+    >>> tomato puree (water, tomato paste), sugar, distilled vinegar, molasses, water, modified corn starch, 
+        salt, bourbon whiskey, contains 1% or less of: mustard flour, spice, dried onion, dried garlic, 
+        natural flavor, xanthan gum, caramel color.
+
+    feature f: file name
+    >>> python3 what2Eat.py getAllProducts -b 'FRESH & EASY' -f 'someRandomFile.csv'
+        #returns all products carried by FRESH & EASY based on the information in someRandomFile.csv
+    >>> ['CHIPOTLE BARBECUE SAUCE', 'HOT & SPICY BARBECUE SAUCE', ...... 'PASTA SAUCE WITH IMPORTED ITALIAN TOMATOES & OLIVE OIL']
+
+
+Function Signatures: 
+    - load_csv_file()
+        - Output: a nested 2D list of product data 
+
+    - returnBrands()
+        - Output: a list of all brands
+
+    - isValidBrand(brandName)
+        - Input: brandName (brand name taken from user)
+        - Output: a boolean value that is True if the brand exists and False if it does not
+
+    - getAllProducts(brandName)
+        - Input: brandName (brand name taken from user)
+        - Output: a list of all products carried by the given brand
+
+    - getProductIngredients(brandName, productName)
+        - Input:
+            brandName (brand name taken from user)
+            productName (product name taken from user)
+        - Output:
+            a string of all the ingredients
+
+    - containsIngredient(ingredient, brandName, productName)
+        - Input:
+            ingredient: ingredient taken from user 
+            brandName: brand name taken from user 
+            productName: product name taken from user 
+        - Output:
+            a boolean value that is True if the product contains the ingredient and False if it does not
+
+    - brandCarriesProduct(brandName, productName)  
+        - Input:
+            brandName (brand name taken from user)
+            productName (product name taken from user)
+        - Output:
+            a boolean value that is True if the brand carries the product and False if it does not
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+
+6/2
+IN FORNT END .PY THE MULTIPRODUCT THREAD/ROUTE WHERE IT'S RENDER TEMPLATE. PRODUCTS= FOO NEEDS TO BE AN ACTUAL THING! 
+
+make another page that is from brands
+pass to the template and get things from the result of the users 
+through that way we will be able to pass things around and save anything in the python side 
+
+RESOLVED - Current confusion (Morgan): I am having a hard time getting the brand dropdown form to submit the brand and product name
+to the productInfo page. I have been poking around trying to figure out the POST/GET stuff and using global variables in
+the front_end, but I am getting confused and unhelpful errors. 
+
+Add in return and parameters (ALMOST DONE @ALICE)
+
+On the productInfo page, the product variable includes all of the products of the given brand, it should 
+only include the product being referenced.
+
+On the productInfo page it needs to display the ingredients - it looks like the product is not being passed into
+datasource getIngredients.
+
+Ensure footer is the same on all pages
+
+Edge case: if user hits enter and submits a string that is not a product in the dataset
+    I DON'T THINK WE NEED THIS? 
+Remove the ASCII character values from data entries (those on the inside)
+
+DONE !Make thedatabse update correctly
+
+CSS isn't doing what I want it to.
+
+DONE ! How should we deal with case in the search bar. Could we make everything in the database capital and then convert the user's input into 
+all caps?
